@@ -9,10 +9,12 @@ function stringIncludes(haystack, needle) {
 }
 
 function countLetter(haystack, needle) {
+  let countArray = []
   let count = 0
 
-  while (haystack.length) {
-    if (haystack.shift() === needle) {
+  for (let i = 0; i < haystack.length; i++) {
+    countArray.push(haystack[i])
+    if (countArray[i] === needle) {
       count++
     }
   }
